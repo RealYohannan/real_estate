@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Real Estate Hub</title>
+  <style>
+    body { background: linear-gradient(135deg, #2c5282, #4a90e2, #6fb1fc); font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:40px; display:flex; align-items:center; justify-content:center; min-height:100vh; }
+    .login-container { background: rgba(255,255,255,0.9); width:360px; padding:40px 30px; border-radius:20px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); text-align:center; }
+    h2 { color: #2c5282; margin-bottom:10px; }
+    .form-group { margin-bottom:20px; text-align:left; }
+    label { color: #2c5282; font-weight:600; }
+    input[type="text"], input[type="password"] { width:100%; padding:8px; border:1px solid #b6d4fe; border-radius:6px; }
+    .btn-primary { background: linear-gradient(to right, #2c5282, #4a90e2); color: #fff; border:none; padding:10px 0; border-radius:8px; font-size:16px; cursor:pointer; width:100%; }
+    .links { text-align:center; margin-top:15px; }
+    .links a { color: #4a90e2; font-size:13px; margin:0 5px; }
+    nav { margin-bottom:30px; text-align:center; }
+    nav a { color:#2c5282;text-decoration:none;padding:8px 16px;}
+    nav a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="home.html">Home</a> |
+  <a href="prgm09.php">Properties</a> |
+  <a href="prgm10.php">Update</a> |
+  <a href="prgmsix.php">Calculator</a> |
+  <a href="pgm07.php">Forms Demo</a>
+</nav>
+<div class="login-container">
+  <h2>Login to Real Estate Hub</h2>
+  <form action="home.html" method="get">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input required type="text" id="username" name="username" autofocus>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input required type="password" id="password" name="password">
+    </div>
+    <button class="btn-primary" type="submit">Login</button>
+  </form>
+  <div class="links">
+    <a href="#">Forgot password?</a>
+    <a href="#">Register</a>
+  </div>
+</div>
+</body>
+</html>
